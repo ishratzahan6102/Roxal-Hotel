@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@500&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+@import "compass/css3";
+    body{
+      font-family: 'Playfair Display', serif;
+    }
+
+    .color{
+        background-color:  #F4D03F ;
+        border: none;
+        color: white;
+    }
+
+    .Carousel-img{
+        filter: brightness(50%);
+    }
+
+    .logo{
+      width: 18vw;
+      filter: saturate(200%);
+    }
+
+    .icons{
+      color: #F4D03F;
+    
+    }
+
+    .dropdown-menu{
+      background-color: #F4D03F;
+    }
+
+    .h1{
+    
+      font-family: 'Playfair Display', serif;
+    }
+
+    .h2{
+    
+      font-family: 'Playfair Display', serif;
+    }
+
+    p, .span{
+      font-family: 'Playfair Display', serif; ;
+    }
+
+    #img{
+      animation-delay: .2s;
+    }
+
+    #h4{
+      animation-delay: .4s;
+    }
+
+    #h1{
+      animation-delay: .6s;
+    }
+
+    #h2{
+      animation-delay: .8s;
+    }
+
+    #button{
+      animation-delay: 1s;
+    }
+
+    .nav{
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+    }
+    .carousel-inner > .carousel-item > img {
+    width: 100%;
+    height: 800px;
+    }
+
+    .offer-img{
+      filter: saturate(110%);
+      width: 190px;
+      height: 300px;
+      z-index: 1;
+    }
+
+    .box{
+      position: absolute;
+      width: 190px;
+      height: 300px;
+      background-color: rgba(170, 162, 162, 0.219);
+      transform: rotate(0deg) ;
+      z-index: -1;
+      animation: rotate 2s ease infinite;
+    }
+
+    @keyframes rotate {
+     0%{
+      transform: rotate(8deg);
+     }
+     100%{
+      transform: rotate(-5deg);
+     }
+    }
+
+    .logo1{
+      width: 80px;
+      filter: saturate(170%);
+    }
+
+    .logo3, .down-logo1, .down-logo2{
+      width: 50px;
+      filter: saturate(100%);
+    }
+
+    .special-guest-bg{
+      background: linear-gradient(to top, #f8f7f2, transparent),linear-gradient(to bottom, #f8f7f2, transparent), url(images/general/gold-texture-wallpaper.jpg);
+      
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      max-height: 300vh;
+    }
+
+    .inner{
+      overflow: hidden;
+    }
+
+    .inner img{
+      width: 100%;
+      height: 300px;
+      transition: all 1.3s ease;
+    }
+
+    .room-card:hover img{
+      transform: scale(1.2);
+    }
+
+    .room-card{
+      background-color: white;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+    }
+
+    .room-card:hover{
+      background-color: #e6c130;
+      color: white;
+    }
+
+    .room-card:hover i{
+      color: white;
+    }
+
+    .room-card:hover button{
+      background-color: white;
+      color: #F4D03F;
+    }
+
+    .slider-section{
+      background-color: black;
+      max-height: 600vh;
+    }
+
+    .image-slider{
+      width: 100%;
+      max-height: 1200px;
+    }
+    .image-slider,
+    .slider-container {
+      position: relative;
+      height: 100%;
+    }
+    
+    .slider-container {
+      background: black;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+     
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position:center ;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block; 
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+    .down-logo1{
+      position: relative;
+      left: 425px;
+    }
+    .down-logo2{
+      position: relative;
+      left: 935px;
+    }
+    .video-section{
+      max-height: 1500px;
+   
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  .bg-img{
+    background:linear-gradient(to top, #0d0d0e, transparent),linear-gradient(to bottom, #0d0d0e, transparent), url(images/general/bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+  }
+  .pulse-button{
+    position:relative;
+    display: block;
+    width: 100px;
+    height: 100px;
+    top: 0%;
+    left: 30%;
+    font-size: 1.5em;
+    font-weight: light;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    border: .5px solid white;
+    border-radius: 50%;
+    background: #4446468e;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
+    animation: pulse 1s ease-in-out infinite; 
+  }
+  @keyframes pulse {
+    0%{
+      transform: scale(.5);
+    }
+    70%{
+      transform: scale(1.5);
+      box-shadow: 0 0 0 200px rgba(#5a99d4, .5);
+    }
+    100%{
+      transform: scale(.7);
+      box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
+    }
+
+  }
+ @media screen and (max-width: 576px) {
+    .box{
+      margin-left:70px ;
+    }
+  }
+ @media screen and  (max-width: 992px)  {
+   
+    .center{
+      text-align: center;
+    }
+    .justify{
+     justify-content: center;
+    }
+    .round-img{
+      width: 25%;
+    }
+  
+ }
