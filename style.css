@@ -74,7 +74,7 @@
 
     .offer-img{
       filter: saturate(110%);
-      width: 190px;
+      width: 200px;
       height: 300px;
       z-index: 1;
     }
@@ -264,8 +264,9 @@
   .justify{
    justify-content: center;
   }
-  .round-img{
-    width: 100%;
+  .offer-img{
+    width: 350px;
+    height: 480px;
   }
   }
  @media screen and (min-width: 577px) and  (max-width: 992px)  {
@@ -276,8 +277,6 @@
     .justify{
      justify-content: center;
     }
-    .round-img{
-      width: 50%;
-    }
+   
   
  }
