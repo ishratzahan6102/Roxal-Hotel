@@ -67,10 +67,11 @@
       z-index: 1;
       width: 100%;
     }
-    /* .carousel-inner > .carousel-item > img {
+    .carousel-inner > .carousel-item > img {
     width: 100%;
-    height: 800px;
-    } */
+    height: 100vh;
+    filter: brightness(80%);
+    }
 
     .offer-img{
       filter: saturate(110%);
