@@ -94,20 +94,20 @@
       position: absolute;
       width: 190px;
       height: 300px;
-      background-color: rgba(170, 162, 162, 0.219);
-      transform: rotate(0deg) ;
+      background-color: rgba(243, 228, 188, 0.575);
+      transform: rotate(8deg) ;
       z-index: -1;
       animation: rotate 2s ease infinite;
     }
 
-    @keyframes rotate {
+    /* @keyframes rotate {
      0%{
       transform: rotate(8deg);
      }
      100%{
       transform: rotate(-5deg);
      }
-    }
+    } */
 
     .logo1{
       width: 80px;
@@ -126,7 +126,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-      max-height: 500vh;
+     
     }
 
     .inner{
@@ -147,7 +147,8 @@
       background-color: white;
       border: none;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    
+      width: 18rem;
+      margin: 0 auto;
     }
 
     .room-card:hover{
@@ -158,15 +159,19 @@
     .room-card:hover i{
       color: white;
     }
-
-    .room-card:hover button{
+    .room-card button{
       background-color: white;
       color: #F4D03F;
+      border:2px solid #F4D03F;
+    }
+    .room-card:hover button{
+      background-color: #F4D03F;
+      color: white;
     }
 
     .slider-section{
       background-color: black;
-      max-height: 600vh;
+     
     }
 
     .image-slider{
@@ -273,7 +278,7 @@
       margin: 0 auto;
       text-align: justify;
     }
- @media screen and (max-width: 676px) {
+ @media screen and (max-width: 600px) {
   .center{
     text-align: center;
   }
@@ -281,19 +286,26 @@
    justify-content: center;
   }
   .offer-img{
-    width: 350px;
-    height: 480px;
+    width: 300px;
+    height: 450px;
   }
   .box{
-    width: 340px;
-    height: 480px;
+    width: 300px;
+    height: 450px;
   }
   .round-img{
     width: 75%;  
   }
+  h3{
+    font-size: 2.5vh;
+  }
   h1{
-    font-size: 8vh;
+    font-size: 6vh;
+
     font-family: 'Playfair Display', serif;
+  }
+  h2{
+    font-size: 4vh;
   }
   .text-width{
     width: 90%;
@@ -304,9 +316,12 @@
     margin: 0 auto;
     text-align: justify;
   }
+  .dining-border{
+    border: none;
+  }
 }
   
- @media screen and (min-width: 677px ) and (max-width: 992px){
+ @media screen and (min-width: 600px ) and (max-width: 992px){
     .center{
       text-align: center;
     }
@@ -325,5 +340,4 @@
       margin: 0 auto;
       text-align: justify;
     }
-
  }
