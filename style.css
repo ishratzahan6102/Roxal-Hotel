@@ -110,7 +110,8 @@
     }
 
     .logo1{
-      width: 100px;
+      width: 80px;
+      height: 80px;
       filter: saturate(170%);
     }
 
