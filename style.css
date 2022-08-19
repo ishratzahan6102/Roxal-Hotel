@@ -111,9 +111,9 @@
      }
     } */
     .special-guest-bg{
-      background: linear-gradient(to top, #f8f7f2, transparent),linear-gradient(to bottom, #f8f7f2, transparent), url(images/general/gold-texture-wallpaper.jpg); 
+      background: linear-gradient(to top, #ffffffd7, transparent),linear-gradient(to bottom, #ffffff, transparent), url(images/general/gold-texture-wallpaper.jpg); 
       background-size: cover;
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       width: 100%; 
     }
 
@@ -122,7 +122,6 @@
     }
 
     .inner img{
-      width: 18rem;
       height: 280px;
       transition: all 1.3s ease;
     }
@@ -287,7 +286,9 @@
     width: 250px;
     height: 400px;
   }
-
+  .inner img{
+    height:auto;
+  }
   .round-img{
     width: 75%;  
   }
