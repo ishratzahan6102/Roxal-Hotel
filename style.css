@@ -43,29 +43,43 @@
 
     #img{
       animation-delay: .2s;
+      padding-bottom: 1rem;
     }
 
     #h3{
-      font-size: 3.5vh ;
+      font-size: 1.5rem ;
+      text-shadow: .1rem  .1rem .3rem black;
+      padding-bottom: 1rem;
       animation-delay: .3s;
     }
 
     #h1{
-      font-size: 9vh;
+      font-size: 3.8rem;
+      font-weight: 700;
+      letter-spacing: .3rem;
+      text-shadow: .1rem  .1rem .8rem black;
+      padding-bottom: 1rem;
       font-family: 'Playfair Display', serif;
       animation-delay: .4s;
     }
 
     #h2{
-      font-size: 5vh;
+      font-size: 2rem;
+      text-shadow: .1rem  .1rem .5rem black;
+      padding-bottom: 1.6rem;
       font-family: 'Playfair Display', serif;
       animation-delay: .5s;
     }
 
     #button{
       animation-delay: .6s;
+      border-width: medium ;
+      border-radius: 0;
+      font-size: 1.1rem;
     }
-
+    .banner-button{
+      padding: 1rem 2rem;
+    }
     .nav{
       position: absolute;
       z-index: 1;
@@ -111,8 +125,8 @@
      }
     } */
     .special-guest-bg{
-      background: linear-gradient(to top, #ffffff, transparent),linear-gradient(to bottom, #ffffff, transparent), url(images/general/bg.jpg); 
-      background-size: contain;
+      background: linear-gradient(to top, #ffffffe8, transparent),linear-gradient(to bottom, #ffffff, transparent), url(images/general/gold-texture-wallpaper.jpg); 
+      background-size: cover;
       background-repeat: repeat;
       width: 100%; 
     }
@@ -152,7 +166,7 @@
       border:2px solid #F4D03F;
     }
     .room-card:hover button{
-      background-color: #F4D03F;
+      background-color: black;
       color: white;
     }
 
@@ -266,6 +280,33 @@
       text-align: justify;
     }
  @media screen and (max-width: 768px) {
+  #img{
+    padding-bottom: 1rem;
+    width: 200px;
+  }
+
+  #h3{
+    font-size: 1rem ;
+    padding-bottom: .5rem;
+  }
+
+  #h1{
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+
+  #h2{
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  #button{
+    font-size: 1rem;
+  }
+  .banner-button{
+    padding: .5rem 1rem;
+  }
   .center{
     text-align: center;
   }
@@ -291,16 +332,6 @@
   }
   .round-img{
     width: 75%;  
-  }
-  h3{
-    font-size: 2.5vh;
-  }
-  h1{
-    font-size: 6vh;
-    font-family: 'Playfair Display', serif;
-  }
-  h2{
-    font-size: 4vh;
   }
   .text-width{
     width: 90%;
