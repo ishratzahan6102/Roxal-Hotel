@@ -326,6 +326,9 @@
     .justify{
      justify-content: center;
     }
+    .inner img{
+      height:auto;
+    }
     .round-img{
       width: 50%;  
     }
