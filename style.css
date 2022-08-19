@@ -8,15 +8,67 @@
       z-index: 1;
       width: 100%;
     }
-    .dropdown-menu{
-      background-color: #F4D03F;
+    .nav-item a{
+      color: white;
+      font-family: 'Playfair Display', serif;
     }
-    .color{
-        background-color:  #F4D03F ;
-        border: none;
-        color: white;
+    #Offcanvas{
+      position: fixed;
+      top:0;
+      left: 0;
+      width: 0px;
+      z-index: 15;
+      /* padding-left: 24px; */
+      height: 100%;
+      overflow: auto;
+      overflow-x: hidden;
+      background: white;
+      transition: .5s all ease;
     }
-
+    #Offcanvas ul li a{
+      color: black;
+    }
+    #Offcanvas ul li a:hover{
+      color: #e6c130;
+    }
+    /* Offcanvas togger */
+    #Toggle-btn{
+      transition: .5s all ease;
+      border: none;
+      outline: none;
+      background-color: #e6c130;
+    }
+    #Toggle-btn img{
+      width: 40px;
+      transform: rotate(0deg);
+      transition: .5s all ease;
+    }
+    .social-icons{
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 30px;
+      z-index: 3;
+    }
+    .social-icons a{
+      display: inline-block;
+      margin: 10px 0;
+      font-size: 26px;
+      color: #F4D03F;
+    }
+    .banner-button{
+      background-color: #ecc52a;
+        border: 1px solid  white;
+        color:white ;
+        padding: .8rem 3rem;
+    }
+    .banner-button:hover{
+      background-color: white;
+      color: #ecc52a;
+    }
     .Carousel-img{
         filter: brightness(50%);
     }
@@ -34,7 +86,7 @@
       filter: saturate(100%);
     }
     .icons{
-      color: #F4D03F;
+      color: #ecc52a;
     
     }
     p, span{
@@ -76,9 +128,6 @@
       border-width: medium ;
       border-radius: 0;
       font-size: 1.1rem;
-    }
-    .banner-button{
-      padding: 1rem 2rem;
     }
     .nav{
       position: absolute;
@@ -160,15 +209,7 @@
     .room-card:hover i{
       color: white;
     }
-    .room-card button{
-      background-color: white;
-      color: #F4D03F;
-      border:2px solid #F4D03F;
-    }
-    .room-card:hover button{
-      background-color: black;
-      color: white;
-    }
+    
 
     .slider-section{
       background-color: black;
@@ -280,6 +321,7 @@
       text-align: justify;
     }
  @media screen and (max-width: 768px) {
+ 
   #img{
     padding-bottom: 1rem;
     width: 200px;
@@ -348,7 +390,8 @@
 }
   
  @media screen and (min-width: 769px) and (max-width: 992px){
-    .center{
+
+  .center{
       text-align: center;
     }
     .align{
