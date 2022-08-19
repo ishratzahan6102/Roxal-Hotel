@@ -265,7 +265,7 @@
       margin: 0 auto;
       text-align: justify;
     }
- @media screen and (max-width: 767px) {
+ @media screen and (max-width: 768px) {
   .center{
     text-align: center;
   }
@@ -316,7 +316,7 @@
   }
 }
   
- @media screen and (min-width: 767px) and (max-width: 992px){
+ @media screen and (min-width: 769px) and (max-width: 992px){
     .center{
       text-align: center;
     }
