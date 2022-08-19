@@ -3,7 +3,14 @@
     body{
       font-family: 'Playfair Display', serif;
     }
-
+    .navbar{
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+    }
+    .dropdown-menu{
+      background-color: #F4D03F;
+    }
     .color{
         background-color:  #F4D03F ;
         border: none;
@@ -13,34 +20,24 @@
     .Carousel-img{
         filter: brightness(50%);
     }
-
     .logo{
-      width: 18vw;
+      width: 50%;
       filter: saturate(200%);
     }
-
+    .logo1{
+      width: 80px;
+      height: 80px;
+      filter: saturate(170%);
+    }
+    .logo3{
+      width: 50px;
+      filter: saturate(100%);
+    }
     .icons{
       color: #F4D03F;
     
     }
-
-    .dropdown-menu{
-      background-color: #F4D03F;
-    }
-    h3{
-      font-size: 3.5vh ;
-    }
-    h1{
-      font-size: 9vh;
-      font-family: 'Playfair Display', serif;
-    }
-
-    h2{
-      font-size: 5vh;
-      font-family: 'Playfair Display', serif;
-    }
-    
-    p, .span{
+    p, span{
       font-family: 'Playfair Display', serif; ;
     }
 
@@ -49,19 +46,24 @@
     }
 
     #h3{
-      animation-delay: .4s;
+      font-size: 3.5vh ;
+      animation-delay: .3s;
     }
 
     #h1{
-      animation-delay: .6s;
+      font-size: 9vh;
+      font-family: 'Playfair Display', serif;
+      animation-delay: .4s;
     }
 
     #h2{
-      animation-delay: .8s;
+      font-size: 5vh;
+      font-family: 'Playfair Display', serif;
+      animation-delay: .5s;
     }
 
     #button{
-      animation-delay: 1s;
+      animation-delay: .6s;
     }
 
     .nav{
@@ -108,25 +110,11 @@
       transform: rotate(-5deg);
      }
     } */
-
-    .logo1{
-      width: 80px;
-      height: 80px;
-      filter: saturate(170%);
-    }
-
-    .logo3, .down-logo1, .down-logo2{
-      width: 50px;
-      filter: saturate(100%);
-    }
-
     .special-guest-bg{
-      background: linear-gradient(to top, #f8f7f2, transparent),linear-gradient(to bottom, #f8f7f2, transparent), url(images/general/gold-texture-wallpaper.jpg);
-      
+      background: linear-gradient(to top, #f8f7f2, transparent),linear-gradient(to bottom, #f8f7f2, transparent), url(images/general/gold-texture-wallpaper.jpg); 
       background-size: cover;
       background-repeat: no-repeat;
-      width: 100%;
-     
+      width: 100%; 
     }
 
     .inner{
@@ -278,21 +266,28 @@
       margin: 0 auto;
       text-align: justify;
     }
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 767px) {
   .center{
     text-align: center;
+  }
+  .align{
+    align-items: center;
   }
   .justify{
    justify-content: center;
   }
+  .img-box{
+    margin: 2rem 0;
+  }
   .offer-img{
-    width: 300px;
-    height: 450px;
+    width: 250px;
+    height: 400px;
   }
   .box{
-    width: 300px;
-    height: 450px;
+    width: 250px;
+    height: 400px;
   }
+
   .round-img{
     width: 75%;  
   }
@@ -301,7 +296,6 @@
   }
   h1{
     font-size: 6vh;
-
     font-family: 'Playfair Display', serif;
   }
   h2{
@@ -321,9 +315,12 @@
   }
 }
   
- @media screen and (min-width: 600px ) and (max-width: 992px){
+ @media screen and (min-width: 767px) and (max-width: 992px){
     .center{
       text-align: center;
+    }
+    .align{
+      align-items: center;
     }
     .justify{
      justify-content: center;
