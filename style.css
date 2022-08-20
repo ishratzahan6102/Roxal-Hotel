@@ -168,7 +168,7 @@
      }
     } */
     .special-guest-bg{
-      background: linear-gradient(to top, #ffffffec, transparent),linear-gradient(to bottom, #ffffffe7, transparent), url(images/general/yellow_diagonal_geometric_striped_background_with_halftone_detailed.jpg); 
+      background-color: #e6c2300e;
       background-size: cover;
       background-repeat: repeat;
       width: 100%; 
