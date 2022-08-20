@@ -14,12 +14,24 @@
     }
     #NavbarNav ul li a:hover{
        color: #e6c130;
+      
+    }
+    hr{
+      margin: 0;
+    }
+    .btn-close{
+      position: absolute;
+     
+      right: 10px;
+      top: 10px;
     }
     .offcanvas-body  ul li a{
-      color: black;
+      color: white;
+      background-color: black;
+      font-size: 1rem;
     }
     .offcanvas-body  ul li a:hover{
-     
+      color: #e6c130;
     }
     /* Offcanvas togger */
     #Toggle-btn{
@@ -35,13 +47,13 @@
     }
     .social-icons{
       display: flex;
-      /* margin-left: 15px;  */
+      margin-top: 10px; 
     }
     .social-icons a{
       display: inline-block;
-      margin-right: 15px;
-      font-size: 26px;
-      color: black;
+      margin: 0 15px;
+      font-size: 22px;
+      color: white;
     }
     .social-icons a:hover{
       color: #ecc52a;
@@ -313,7 +325,7 @@
  
   #img{
     padding-bottom: 1rem;
-    width: 200px;
+    width: 300px;
   }
 
   #h3{
