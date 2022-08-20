@@ -21,61 +21,64 @@
 <body>
     <header>        
         <section>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
 
-          <!-- offcanvas menu -->
-          <div id="Offcanvas">
-            <a class=" navbar-brand d-block d-sm-none bg-dark py-3 text-center" href="#">
-              <img src="images/general/logo (1).png"  alt="" width="200" height="50">
-            </a>
-            <a class=" navbar-brand d-md-block d-none bg-dark py-3 text-center" href="#">
-              <img src="images/general/logo (1).png"  alt="" width="200" height="50">
-            </a>
-            <ul class="nav flex-column text-center">
-              <li class="nav-item mx-2 fs-5">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item mx-2 fs-5">
-                <a class="nav-link" href="#">Room</a>
-              </li>
-              <li class="nav-item mx-2 fs-5">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item mx-2 fs-5">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item mx-2 fs-5">
-                <a class="nav-link" href="#">Contact us</a>
-              </li>
-              <hr>
-              <section>
-                <!-- social icon -->
-                <div class="social-icons justify-content-center">
-                  <a href=" ">
-                    <i class="fa-brands fa-square-facebook"></i>
+                <div class="text-center">
+                   <button type="button" class="btn-close bg-warning rounded-circle  my-2  " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <a class=" navbar-brand d-block d-sm-none bg-dark py-3 text-center" href="#">
+                    <img src="images/general/logo (1).png"  alt="" width="200" height="50">
                   </a>
-                  <a href=" ">
-                    <i class="fa-brands fa-facebook-messenger"></i>
-                  </a>
-                  <a href=" ">
-                    <i class="fa-brands fa-square-twitter"></i>
+                  <a class=" navbar-brand d-md-block d-none bg-dark py-3 text-center" href="#">
+                    <img src="images/general/logo (1).png"  alt="" width="200" height="50">
                   </a>
                 </div>
-                <!-- social icon -->
-              </section>
-            </ul>
-            
-
-          </div>
+                <div class="offcanvas-body px-0">
+                  <ul class="nav flex-column text-center">
+                    <li class="nav-item fs-5">
+                      <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item  fs-5">
+                      <a class="nav-link" href="#">Room</a>
+                    </li>
+                    <li class="nav-item fs-5">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item fs-5">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item  fs-5">
+                      <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                    <hr>
+                    <section>
+                      <!-- social icon -->
+                      <div class="social-icons justify-content-center">
+                        <a href=" ">
+                          <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href=" ">
+                          <i class="fa-brands fa-facebook-messenger"></i>
+                        </a>
+                        <a href=" ">
+                          <i class="fa-brands fa-square-twitter"></i>
+                        </a>
+                      </div>
+                      <!-- social icon -->
+                    </section>
+                  </ul>
+                </div>
+              </div>
           <!-- offcanvas menu -->
            <!-- navigation bar -->
            <nav class="navbar navbar-expand-lg bg-lg-tranparent p-lg-4 p-2 custom-navbar">
             <div class="container-fluid">
 
-              <button id="Toggle-btn" class="navbar-toggler">
+              <button id="Toggle-btn" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                 <span>
                   <img src="images/general/navbar-logo.jpg" alt="">
                 </span>
               </button>
+              <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
 
               <a class="navbar-brand d-none d-md-block" href="#">
                 <img src="images/general/logo (1).png" alt="" width="200" height="50">
@@ -85,7 +88,7 @@
               <div class="collapse navbar-collapse  d-none d-lg-block" id="NavbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item mx-2 fs-5">
-                    <a class="nav-link " href="#">Home</a>
+                    <a class="nav-link active" href="#">Home</a>
                   </li>
                   <li class="nav-item mx-2 fs-5">
                     <a class="nav-link" href="#">Room</a>
@@ -113,7 +116,7 @@
          
           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000" style="background:linear-gradient(to top, #0d0d0ea1, transparent),linear-gradient(to bottom, #0d0d0e8a, transparent), url(images/Carousel/Carousel8.jpg);">
+              <div class="carousel-item active" data-bs-interval="5000" style="background:linear-gradient(to top, #0d0d0ea1, transparent),linear-gradient(to bottom, #0d0d0e8a, transparent), url(images/Carousel/Carousel1.jpg);">
                 <div class="container text-light fw-semibold">
                   <img id="img" class="my-2 animate__animated animate__fadeInUp" src="images/general/rating.png" alt="">
                   <h3 id="h3" class="font-monospace animate__animated animate__fadeInUp">THE MARVELOUS MRS. MAISEL AT THE PLAZA</h3>

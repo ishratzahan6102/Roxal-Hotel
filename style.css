@@ -12,31 +12,21 @@
       color: white;
       font-family: 'Playfair Display', serif;
     }
-    #Offcanvas{
-      position: fixed;
-      top:0;
-      left: 0;
-      width: 0px;
-      z-index: 15;
-      /* padding-left: 24px; */
-      height: 100%;
-      overflow: auto;
-      overflow-x: hidden;
-      background: white;
-      transition: .5s all ease;
+    #NavbarNav ul li a:hover{
+       color: #e6c130;
     }
-    #Offcanvas ul li a{
+    .offcanvas-body  ul li a{
       color: black;
     }
-    #Offcanvas ul li a:hover{
-      color: #e6c130;
+    .offcanvas-body  ul li a:hover{
+     
     }
     /* Offcanvas togger */
     #Toggle-btn{
       transition: .5s all ease;
       border: none;
       outline: none;
-      background-color: white;
+
     }
     #Toggle-btn img{
       width: 30px;
@@ -52,6 +42,9 @@
       margin-right: 15px;
       font-size: 26px;
       color: black;
+    }
+    .social-icons a:hover{
+      color: #ecc52a;
     }
     .banner-button{
         background-color: #ecc52a;
@@ -367,10 +360,10 @@
   }
   .inner img{
     height:auto;
-    width: 24rem;
+    width: 22rem;
   }
   .room-card{
-    width: 24rem;
+    width: 22rem;
   }
   .round-img{
     width: 75%;  
@@ -401,10 +394,10 @@
      justify-content: center;
     }
     .inner img{
-      width: 24rem;
+      width: 22rem;
     }
     .room-card{
-      width: 24rem;
+      width: 22rem;
     }
     .round-img{
       width: 50%;  
