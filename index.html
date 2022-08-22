@@ -21,19 +21,18 @@
 <body>
     <header>        
         <section>
-              <div class="offcanvas  bg-dark offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
 
                 <div class="text-end">
-                   <button type="button" class="btn-close bg-warning rounded-circle p-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  <a class="navbar-brand d-block d-sm-none bg-dark p-4 text-center" href="#">
-                    <img src="images/general/logo (1).png"  alt="" width="200" height="50">
-                  </a>
-                  <a class=" navbar-brand d-md-block d-none bg-dark py-3 text-center" href="#">
+                   <button type="button" class="btn-close bg-white rounded-circle p-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                
+                  <a class=" navbar-brand d-lg-none d-block  py-3 text-center" href="#">
                     <img src="images/general/logo (1).png"  alt="" width="200" height="50">
                   </a>
                 </div>
                 <div class="offcanvas-body p-0">
                   <ul class="nav flex-column text-center">
+                    <hr>
                     <li class="nav-item ">
                       <a class="nav-link" href="#">Blog</a>
                     </li>
@@ -81,39 +80,43 @@
               </div>
           <!-- offcanvas menu -->
            <!-- navigation bar -->
-           <nav class="navbar navbar-expand-lg bg-lg-tranparent p-lg-4 p-2 custom-navbar">
-            <div class="container-fluid">
+           <nav class="navbar navbar-expand-lg bg-lg-tranparent px-lg-5 p-2 custom-navbar">
+            <div class="container-fluid g-0">
 
               <button id="Toggle-btn" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                 <span>
-                  <img src="images/general/navbar-logo.jpg" alt="">
+                  <img src="images/general/menubar.png" alt="">
                 </span>
               </button>
-              <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
-
-              <a class="navbar-brand d-none d-md-block" href="#">
-                <img src="images/general/logo (1).png" alt="" width="200" height="50">
+             
+              <a class="navbar-brand d-none d-lg-block" href="#">
+                <img src="images/general/logo (1).png" alt="" width="200" height="60">
               </a>
               
-              <!--  -->
+              
+              
               <div class="collapse navbar-collapse  d-none d-lg-block" id="NavbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item mx-2 fs-5">
+                  <li class="nav-item mx-3 fs-5">
                     <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li class="nav-item mx-2 fs-5">
+                  <li class="nav-item mx-3 fs-5">
                     <a class="nav-link" href="#">Room</a>
                   </li>
-                  <li class="nav-item mx-2 fs-5">
+                  <li class="nav-item mx-3 fs-5">
                     <a class="nav-link" href="#">Blog</a>
                   </li>
-                  <li class="nav-item mx-2 fs-5">
+                  <li class="nav-item mx-3 fs-5">
                     <a class="nav-link" href="#">About</a>
                   </li>
-                  <li class="nav-item mx-2 fs-5">
+                  <li class="nav-item mx-3 fs-5">
                     <a class="nav-link" href="#">Contact us</a>
                   </li>
+                  <li class="nav-item mx-3 fs-5">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass text-light"></i></a>
+                  </li>
                 </ul>
+                <button id="button" class= "btn rounded-0 font-monospace text-uppercase banner-button d-none d-lg-block" type="submit">BOOKING NOW</button>
               </div>
             </div>
           </nav>
@@ -128,7 +131,7 @@
           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="5000" style="background:linear-gradient(to top, #0d0d0ea1, transparent),linear-gradient(to bottom, #0d0d0e8a, transparent), url(images/Carousel/Carousel7.jpg);">
+              <div class="carousel-item active car-bg  active" data-bs-interval="5000" style="background:linear-gradient(to top, #0d0d0ea1, transparent),linear-gradient(to bottom, #0d0d0e8a, transparent), url(images/Carousel/Carousel1.jpg);">
                 <div class="container text-light fw-semibold">
                   <img id="img" class="my-2 animate__animated animate__fadeInUp" src="images/general/rating.png" alt="">
                   <h3 id="h3" class="font-monospace animate__animated animate__fadeInUp">THE MARVELOUS MRS. MAISEL AT THE PLAZA</h3>
@@ -137,13 +140,13 @@
                   <button id="button" class="rounded-0 font-monospace text-uppercase animate__animated animate__fadeInUp banner-button" type="submit">ROOM & SUITE</button>
                 </div>
               </div>
-              <div class="carousel-item " data-bs-interval="5000" style="background:linear-gradient(to top, #0d0d0ea1, transparent),linear-gradient(to bottom, #0d0d0e8a, transparent), url(images/general/swimming-pool-beach-luxury-hotel-type-entertainment-complex-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer-turkey.jpg);">
+              <div class="carousel-item" data-bs-interval="5000" style="background:linear-gradient(to top, #0d0d0ea1, transparent),linear-gradient(to bottom, #0d0d0e8a, transparent), url(images/Carousel/Carousel6.jpg);">
                 <div class="container text-light fw-semibold">
                   <img id="img" class="my-2 animate__animated animate__fadeInUp" src="images/general/rating.png" alt="">
                   <h3 id="h3" class="font-monospace animate__animated animate__fadeInUp">THE MARVELOUS MRS. MAISEL AT THE PLAZA</h3>
                   <h1 id="h1" class="animate__animated animate__fadeInUp">ENJOY THE BEST</h1>
                   <h2 id="h2" class="animate__animated animate__fadeInUp">MOMENTS OF LIFE</h2>
-                  <button id="button" class="rounded-0 font-monospace text-uppercase color animate__animated animate__fadeInUp banner-button" type="submit">ROOM & SUITE</button>
+                  <button id="button" class="rounded-0 font-monospace text-uppercase animate__animated animate__fadeInUp banner-button" type="submit">ROOM & SUITE</button>
                 </div>
               </div>
             </div>
@@ -165,10 +168,10 @@
           <!-- Special Offers -->
           <div id="special-offer" class="row gx-0 p-lg-5">
             <!-- blog -->
-            <article class="col-lg-5 col-md-12 px-lg-3 center">
+            <article class="col-lg-5 col-md-12 px-lg-4 center">
               <p class="text-secondary"> SPECIAL OFFERS</p>
-              <h2 class="fw-semibold">Enjoy a</h2>
-              <h2 class="text-warning  fw-semibold">Luxury Experience</h2>
+              <h1>Enjoy a</h1>
+              <h1 class="text-warning">Luxury Experience</h1>
               <p class="text-secondary text-width ">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meanies content used placeholder</p>
               <div class="d-flex justify my-5">
                 <img class="me-3 logo1" src="images/general/logo.png" alt="">
@@ -483,11 +486,11 @@
          <!-- video section -->
       </section>
 
-      <section class="facilities">
+      <section class="facilities pb-5">
         <!-- message templates -->
-          <div class="p-4">
+          <div class="p-5">
 
-            <div class="experience-title text-start">
+            <div class="experience-title center">
                 <div class="pt-5">
                   <img class="logo1" src="images/general/logo.png" alt="">
                 </div>
@@ -497,7 +500,7 @@
             </div>
 
             <div class="row mt-5">
-              <div class="col-lg-4 col-sm-12 col-md-6 py-3">
+              <div class="col-lg-4 col-sm-12 col-md-6 py-3 center">
                 <div class="card p-3 shadow" id="facilities-card" >
                   <div class="card-body">
                     <i class="fa-solid fa-cart-shopping fs-1"></i>
@@ -507,7 +510,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4  col-sm-12 col-md-6 py-3">
+              <div class="col-lg-4  col-sm-12 col-md-6 py-3 center">
                 <div class="card p-3 shadow" id="facilities-card" >
                   <div class="card-body">
                     <i class="fa-solid fa-utensils fs-1"></i>
@@ -517,7 +520,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4  col-sm-12 col-md-6 py-3 mx-md-auto" >
+              <div class="col-lg-4  col-sm-12 col-md-6 py-3 mx-md-auto center" >
                 <div class="card p-3 shadow" id="facilities-card" >
                   <div class="card-body">
                     <i class="fa-solid fa-fan fs-1"></i>
@@ -532,65 +535,13 @@
       </section>
 
 
-      <section class="Service mt-5 px-3">
-        <div>
-          <div class="row g-0 d-flex align-items-center center">
-  
-            <div class="service-title col-lg-5">
-              <div class=" p-3">
-                <div>
-                  <img class="logo1" src="images/general/logo.png" alt="">
-                </div>
-                <h3 class="my-3 font-monospace text-secondary mb-0 ">DISCOVER ROXAL</h3>
-                <h1 class="fw-bold text-dark"><span class="text-secondary">Welcome</span> To Our</h1>
-                <h1 class="fw-bold text-dark">Extra Services</h1>
-                <p class="fs-6 text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content</p>
-            </div>
-            
-            </div>
-            <div class="col-lg-3  mt-3 p-3 p">
-              <div class=" border-0 p-2 shadow-lg inner">
-                <img src="images/general/service-1.jpg" style="width: 100%; height: 19rem;" class="" alt="...">
-              </div>
-            </div>
-            <div class="col-lg-4 mt-3 p-3">
-              <div class=" border-0 p-2 shadow-lg inner">
-                <img src="images/general/service -2.jpg" style="width: 100%; height: 19rem;" class="" alt="...">
-              </div>
-            </div>
-          </div>
+     
+           
+      
 
 
-          <!-- part 2 -->
-          <!-- <div class="row g-0 d-flex align-items-center">
-  
-            <div class="service-title col-lg-5 pe-lg-5 pl-sm-none">
-              <div class="experience-title">
-                <div class="mt-3 pt-5">
-                  <img class="logo1" src="images/general/logo.png" alt="">
-                </div>
-                <h3 class="my-3 font-monospace text-secondary mb-0 ">DISCOVER ROXAL</h3>
-                <h1 class="fw-bold text-dark"><span class="text-secondary">Welcome</span> To Our</h1>
-                <h1 class="fw-bold text-dark">Extra Services</h1>
-                <p class="fs-6 text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content</p>
-            </div>
-            
-            </div>
-            <div class="col-lg-3  mt-3 pt-5">
-              <div class=" border-0 p-2 shadow-lg inner">
-                <img src="images/general/service-1.jpg" style="width: 100%; height: 19rem;" class="" alt="...">
-              </div>
-            </div>
-            <div class="col-lg-4 mt-3 pt-5">
-              <div class=" border-0 p-2 shadow-lg inner">
-                <img src="images/general/service -2.jpg" style="width: 100%; height: 19rem;" class="" alt="...">
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </section>
-    </main>
-
+      <!-- review -->
+      
 
 
 
@@ -615,8 +566,9 @@
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "3",
+        
         coverflowEffect: {
-          rotate: 20,
+          rotate: 0,
           stretch: 0,
           depth: 100,
           modifier: 1,
@@ -636,11 +588,11 @@
           },
           "@1.00": {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 30,
           },
           "@1.50": {
             slidesPerView: 2,
-            spaceBetween: 50,
+            spaceBetween: 40,
           },
         },
       });

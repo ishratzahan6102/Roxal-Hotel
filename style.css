@@ -17,28 +17,33 @@
     }
     .nav-item a{
       color: white;
-      font-family: 'Playfair Display', serif;
     }
     #NavbarNav ul li a:hover{
-       color: #e6c130;
+       color: #e69d30;
       
     }
     hr{
       margin: 0;
+      color: gray;
+    }
+    .offcanvas{
+      background-color: black;
     }
     .btn-close{
       position: absolute;
-     
       right: 10px;
       top: 10px;
     }
-    .offcanvas-body  ul li a{
+    .offcanvas-body ul li a{
       color: white;
       background-color: black;
       font-size: 1rem;
     }
     .offcanvas-body  ul li a:hover{
       color: #e6c130;
+    }
+    .offcanvas-body  ul li{
+      padding: 6px ;
     }
     /* Offcanvas togger */
     #Toggle-btn{
@@ -62,9 +67,6 @@
       font-size: 22px;
       color: white;
     }
-    .social-icons a:hover{
-      color: #ecc52a;
-    }
     .banner-button{
         background-color: #ecc52a;
         border: 1px solid  white;
@@ -72,11 +74,8 @@
         padding: .8rem 3rem;
     }
     .banner-button:hover{
-      background-color: white;
-      color: #ecc52a;
-    }
-    .Carousel-img{
-        filter: brightness(50%);
+      background-color: black;
+      color: white;
     }
     .logo{
       width: 50%;
@@ -112,9 +111,9 @@
     }
 
     #h1{
-      font-size: 3.8rem;
+      font-size: 4rem;
       font-weight: 700;
-      letter-spacing: .3rem;
+      letter-spacing: .1rem;
       text-shadow: .1rem  .1rem .8rem black;
       padding-bottom: 1rem;
       font-family: 'Playfair Display', serif;
@@ -134,6 +133,7 @@
     #button{
       animation-delay: .6s;
       border-width: medium ;
+      border: none;
       border-radius: 0;
       font-size: 1.1rem;
     }
@@ -142,9 +142,9 @@
       z-index: 1;
       width: 100%;
     }
-    .carousel-inner > .carousel-item{
+    .carousel-item{
       background-size: cover;
-      background-position: center;
+      background-position: right;
       background-repeat: no-repeat;
       min-height: 100vh;
     }
@@ -328,8 +328,9 @@
       box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
     }
     
-
+    
     }
+    
     .text-width ,.text-width2 {
       margin: 0 auto;
       text-align: justify;
@@ -351,22 +352,69 @@
       font-weight: 500;
     }
     #facilities-card:hover{
-      transform: translateY(-10px);
+      transform: translateY(-20px);
       transition: .5s all ;
     }
     #facilities-card::before{
       content: ""
     }
-    .Service {
-      
+    .abstract img{
+      width: 10%;
+      position: absolute;
+      transition: all 1s;
     }
+    .abstract .img-1{
+      animation: width infinite 2s ease-in-out;
+      left: 4rem;
+      margin-top: -3rem;
+    }
+    .abstract .img-2{
+      margin-top: 2rem;
+      animation: width infinite 3s ease-in-out;
+       right: 4rem;
+        z-index: -1;
+    }
+    @keyframes width {
+      0%{
+       transform: scale(.9);
+      }
+      75%{
+        transform: scale(1);
+      }
+      100%{
+        transform: scale(.9);
+      }
+    }
+    .service-prat-2{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .service-prat-1{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .service-title-2{
+      background-color: rgba(128, 128, 128, 0.123);
+    }
+    @keyframes upDown {
+      0%{
+        margin-right: 10px;
+        margin-top: -10px;
+      }
+      100%{
+        margin-right: 0px;
+        margin-top: 0px;
+      }
+    }
+    
+
  @media screen and (max-width: 768px) {
   h1{
     font-size: 2rem;
   }
   #img{
     padding-bottom: 1rem;
-    width: 300px;
+    width: 200px;
   }
 
   #h3{
@@ -434,8 +482,10 @@
     border: none;
   }
 }
+
   
  @media screen and (min-width: 769px) and (max-width: 992px){
+  
   .center{
       text-align: center;
     }
