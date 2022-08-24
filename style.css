@@ -485,6 +485,8 @@
   }
   .banner-button{
     padding: .5rem 1rem;
+    text-align: center;
+      white-space: nowrap;
   }
   .center{
     text-align: center;
