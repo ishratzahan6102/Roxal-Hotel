@@ -2,6 +2,7 @@
 @import "compass/css3";
     body{
       font-family: 'Playfair Display', serif;
+
     }
     .margin{
       margin-top: 6rem;
@@ -16,7 +17,7 @@
       color: #e4c54a;
     }
     i{
-      color: #e4c54a;
+      color:#ecae2a ;
     }
     .navbar{
       position: absolute;
@@ -92,11 +93,11 @@
     .logo1{
       width: 80px;
       height: 80px;
-      filter: saturate(170%);
+      filter: saturate(150%);
     }
     .logo3{
       width: 50px;
-      filter: saturate(100%);
+      filter: saturate(150%);
     }
     .icons{
       color: #ecc52a;
@@ -374,14 +375,18 @@
     .facilities{
       background-color: black;
     }
+    .facilities img{
+      filter: saturate(110%);
+    }
     #facilities-card{
       width: 100%;
       border: .5px solid #ecae2a;
       background-color: transparent;
     }
     #facilities-card i{
-      color: #ecae2a;
+      color:#ecae2a ;
     }
+    
     
     #facilities-card h3{
       color: white;
@@ -453,8 +458,19 @@
         margin-top: 0px;
       }
     }
-    
-
+    .footer{
+      background-color: black;
+    }
+    .footer-input{
+      display: flex;
+      flex-direction: row;
+    }
+    .footer-icons-section{
+      flex-direction: row;
+    }
+    .footer-details{
+      flex-direction: row;
+    }
  @media screen and (max-width: 768px) {
   h1{
     font-size: 2rem;
@@ -503,6 +519,8 @@
   .offer-img{
     width: 250px;
     height: 400px;
+    margin-top: 2rem ;
+    margin-bottom: 2rem;
   }
   .box{
     width: 250px;
@@ -568,6 +586,29 @@
   .gallary-2 {
     flex-direction: column-reverse;
   }
+  .footer-title h2{
+    font-size: 1.3rem;
+  }
+  .footer-input{
+    flex-direction: column;
+  }
+  .footer-input button{
+    width: 50%;
+    margin: 2px auto;
+    
+    
+  }
+  .footer-icons{
+    flex-direction: column;
+
+  }
+  .footer-icons-section{
+    flex-direction: column;
+  }
+  .footer-details{
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
   
@@ -602,7 +643,8 @@
     }
     .overlaping-car{
       width: 40%;
-      margin: 20px auto;
+      margin: 0 auto;
+      margin-top: 8rem;
       position: relative;
       left: 0;
       top: 0;
@@ -631,5 +673,8 @@
     }
     .gallary-2 {
       flex-direction: row-reverse;
+    }
+    .footer-icons{
+      flex-direction: column;
     }
  }
