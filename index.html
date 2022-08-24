@@ -164,9 +164,29 @@
         </section>    
     </header>
     <main>
-        <section class="my-5 pt-5">
+        <section class="special-offer-section my-5 pt-5">
+          <div class="bg-white overlaping-car p-4 shadow-sm rounded-2 mb-5">
+            <div class="row g-0 text-center">
+                <div class="col d-flex justify-content-center align-items-center overlaping-car-border">
+                  <i class="fa-solid fa-calendar-days pe-2"></i> 
+                  <span>CHECK-IN DATE</span>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center ">
+                  <i class="fa-solid fa-calendar-days pe-2"></i> 
+                  <span>CHECK-OT DATE</span>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-user-group pe-2"></i> 
+                  <span>0 GUEST</span>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                  <button id="button" class=" rounded-1 font-monospace text-uppercase banner-button " type="text">CHECK AVAILABILITY</button>
+                </div>
+            </div>
+          </div>
+         
           <!-- Special Offers -->
-          <div id="special-offer" class="row gx-0 p-lg-5">
+          <div id="special-offer" class="row gx-0 p-lg-5 mt-5">
             <!-- blog -->
             <article class="col-lg-5 col-md-12 px-lg-4 center">
               <p class="text-secondary"> SPECIAL OFFERS</p>
@@ -202,13 +222,13 @@
         </section>
      
         <section class="mt-5 pt-5">
-           <!-- Special Guest -->
+           <!-- Suitable Hotel -->
           <div class=" d-flex flex-column align-items-center special-guest-bg">
             <span class="mt-5 pt-5 span text-secondary">SPECIAL OFFERS</span>
             <h2 class="fw-bold text-center">Find Suitable <span class="text-warning">Room</span> For You</h2>
 
-            <div class="row g-4 mt-5 mx-0">
-                <div class="col-lg-3 col-md-6">
+            <div class="row row-cols-lg-4 row-cols-md-2 g-4 mt-5 mx-0">
+                <div class="col">
 
                   <div class="card room-card border-0 shadow">
                     <div class="inner">
@@ -234,7 +254,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col">
 
                   <div class="card room-card border-0 shadow more-height ">
                     
@@ -261,7 +281,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col">
 
                   <div class="card room-card border-0 shadow">
                     
@@ -289,7 +309,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col">
 
                   <div class="card room-card border-0 shadow more-height">
                     
@@ -414,7 +434,7 @@
                </div>
 
 
-                <div id="removeClass" class="col-lg-5 col-md-6 p-4  border-end border-start">
+                <div id="removeClass" class="col-lg-5 col-md-6 p-4">
                   <div>
                     <img class="w-100 mb-4 rounded-1" src="images/experience/experience-2.jpg" alt="">
                   </div>
@@ -473,13 +493,13 @@
         <!-- video section -->
          <div class="bg-img text-light d-flex flex-column justify-content-center align-items-center">
           <div class="text-center">
-            <div>
+            <div class="py-3">
               <img class="logo3" src="images/general/logo.png" alt="">
             </div>
-            <span class="py-4">SPECIAL OFFERS</span>
-            <h1>LUXURY HOTEL</h1>
-            <div class='btn-container'>
-              <span class='pulse-button'> <a href="https://www.youtube.com/watch?v=9PVQW6mOGv8"><i class="fa-solid fa-paper-plane"></i></a></span>
+            <span >SPECIAL OFFERS</span>
+            <h1 class="py-2">LUXURY HOTEL</h1>
+            <div class='btn-container d-flex justify-content-center'>
+              <span class='pulse-button'><a href="https://www.youtube.com/watch?v=9PVQW6mOGv8"><i class="fa-solid fa-paper-plane"></i></a></span>
             </div>
           </div>
          </div>
@@ -565,7 +585,8 @@
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: "3",
+        slidesPerView: "auto",
+        loop: true,
         
         coverflowEffect: {
           rotate: 0,
@@ -574,6 +595,10 @@
           modifier: 1,
           slideShadows: true,
         },
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+       },
         pagination: {
           el: ".swiper-pagination",
         },
@@ -588,11 +613,11 @@
           },
           "@1.00": {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 40,
           },
           "@1.50": {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 50,
           },
         },
       });
