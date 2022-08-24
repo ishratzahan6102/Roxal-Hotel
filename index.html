@@ -19,8 +19,14 @@
     
 </head>
 <body>
-    <header>        
+    <header>  
+            
         <section>
+
+
+
+
+          <!-- offcanvas menu starts here -->
               <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
 
                 <div class="text-end">
@@ -78,8 +84,11 @@
                   </ul>
                 </div>
               </div>
-          <!-- offcanvas menu -->
-           <!-- navigation bar -->
+          <!-- offcanvas menu ends here -->
+
+
+
+           <!-- expanded navigation bar -->
            <nav class="navbar navbar-expand-lg bg-lg-tranparent px-lg-5 p-2 custom-navbar">
             <div class="container-fluid g-0">
 
@@ -92,8 +101,6 @@
               <a class="navbar-brand d-none d-lg-block" href="#">
                 <img src="images/general/logo (1).png" alt="" width="200" height="60">
               </a>
-              
-              
               
               <div class="collapse navbar-collapse  d-none d-lg-block" id="NavbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -120,18 +127,16 @@
               </div>
             </div>
           </nav>
-           <!-- navigation bar -->   
+           <!-- expanded navigation bar -->   
         </section>
-        <section>
-      </section>
-       
+      
         <section>
           <!-- Carousel section here -->
          
-          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active car-bg  active" data-bs-interval="5000" style="background:linear-gradient(to top, #0d0d0ea1, transparent),linear-gradient(to bottom, #0d0d0e8a, transparent), url(images/Carousel/Carousel1.jpg);">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img class="car-img" src="images/Carousel/Carousel1.jpg" alt="">
                 <div class="container text-light fw-semibold">
                   <img id="img" class="my-2 animate__animated animate__fadeInUp" src="images/general/rating.png" alt="">
                   <h3 id="h3" class="font-monospace animate__animated animate__fadeInUp">THE MARVELOUS MRS. MAISEL AT THE PLAZA</h3>
@@ -140,7 +145,8 @@
                   <button id="button" class="rounded-0 font-monospace text-uppercase animate__animated animate__fadeInUp banner-button" type="submit">ROOM & SUITE</button>
                 </div>
               </div>
-              <div class="carousel-item" data-bs-interval="5000" style="background:linear-gradient(to top, #0d0d0ea1, transparent),linear-gradient(to bottom, #0d0d0e8a, transparent), url(images/Carousel/Carousel6.jpg);">
+              <div class="carousel-item" data-bs-interval="5000">
+                <img class="car-img" src="images/Carousel/Carousel8.jpg" alt="">
                 <div class="container text-light fw-semibold">
                   <img id="img" class="my-2 animate__animated animate__fadeInUp" src="images/general/rating.png" alt="">
                   <h3 id="h3" class="font-monospace animate__animated animate__fadeInUp">THE MARVELOUS MRS. MAISEL AT THE PLAZA</h3>
@@ -149,6 +155,7 @@
                   <button id="button" class="rounded-0 font-monospace text-uppercase animate__animated animate__fadeInUp banner-button" type="submit">ROOM & SUITE</button>
                 </div>
               </div>
+              
             </div>
             <!-- carousel button -->
             <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -161,17 +168,20 @@
             </button>
           </div>
           <!-- Carousel section here -->
-        </section>    
+        </section>  
+
     </header>
+
+
     <main>
-        <section class="special-offer-section my-5 pt-5">
+        <section class="special-offer-section">
           <div class="bg-white overlaping-car p-4 shadow-sm rounded-2 mb-5">
             <div class="row g-0 text-center">
                 <div class="col d-flex justify-content-center align-items-center overlaping-car-border">
                   <i class="fa-solid fa-calendar-days pe-2"></i> 
                   <span>CHECK-IN DATE</span>
                 </div>
-                <div class="col d-flex justify-content-center align-items-center ">
+                <div class="col d-flex justify-content-center align-items-center overlaping-car-border ">
                   <i class="fa-solid fa-calendar-days pe-2"></i> 
                   <span>CHECK-OT DATE</span>
                 </div>
@@ -186,13 +196,13 @@
           </div>
          
           <!-- Special Offers -->
-          <div id="special-offer" class="row gx-0 p-lg-5 mt-5">
+          <div id="special-offer" class="row gx-0 p-lg-5 margin">
             <!-- blog -->
             <article class="col-lg-5 col-md-12 px-lg-4 center">
               <p class="text-secondary"> SPECIAL OFFERS</p>
               <h1>Enjoy a</h1>
               <h1 class="text-warning">Luxury Experience</h1>
-              <p class="text-secondary text-width ">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meanies content used placeholder</p>
+              <p class="text-secondary text-width">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meanies content used placeholder</p>
               <div class="d-flex justify my-5">
                 <img class="me-3 logo1" src="images/general/logo.png" alt="">
                 <div class="d-flex flex-column border-start border-2 align-items-start">
@@ -218,19 +228,19 @@
                 </div> 
             </div>
           </div>
-        <!-- Special Offers -->
+          <!-- Special Offers -->
         </section>
      
-        <section class="mt-5 pt-5">
+        <section class="rooms my-5 py-5 ">
            <!-- Suitable Hotel -->
           <div class=" d-flex flex-column align-items-center special-guest-bg">
             <span class="mt-5 pt-5 span text-secondary">SPECIAL OFFERS</span>
             <h2 class="fw-bold text-center">Find Suitable <span class="text-warning">Room</span> For You</h2>
 
-            <div class="row row-cols-lg-4 row-cols-md-2 g-4 mt-5 mx-0">
+            <div class="row row-cols-lg-4 row-cols-md-2 g-4 mt-5 mx-0 ">
                 <div class="col">
 
-                  <div class="card room-card border-0 shadow">
+                  <div class="card room-card border-0 shadow mb-5">
                     <div class="inner">
                        <img src="images/card/card-1.jpg" class="card-img-top p-2" alt="...">
                     </div>
@@ -256,7 +266,7 @@
 
                 <div class="col">
 
-                  <div class="card room-card border-0 shadow more-height ">
+                  <div class="card room-card border-0 shadow more-height mb-5 ">
                     
                     <div class="inner">
                        <img  src="images/card/card-2.jpg" class="card-img-top p-2" alt="...">
@@ -283,7 +293,7 @@
 
                 <div class="col">
 
-                  <div class="card room-card border-0 shadow">
+                  <div class="card room-card border-0 shadow mb-5">
                     
                     <div class="inner">
                        <img  src="images/card/card-3.jpg" class="card-img-top p-2" alt="...">
@@ -311,7 +321,7 @@
 
                 <div class="col">
 
-                  <div class="card room-card border-0 shadow more-height">
+                  <div class="card room-card border-0 shadow more-height mb-5">
                     
                     <div class="inner">
                        <img  src="images/Carousel/Carousel6.jpg" class="card-img-top p-2" alt="...">
@@ -340,9 +350,9 @@
           </div>
         </section>
         
-       <section class="slider-section my-0 py-5 ">
+        <section class="slider-section margin mb-0">
          <!-- image slider -->
-        <div class="hotel-title text-light">
+          <div class="hotel-title text-light margin">
           <div class="d-flex flex-column align-items-center mt-3">
             <div class="mt-5 pt-5">
               <img class="logo3" src="images/general/logo.png" alt="">
@@ -351,9 +361,9 @@
             <h2 class="fw-bold text-center">Discover The Perfect Hotel For You</h2>
             <h3 class="text-center fw-semibold"> <span class="text-warning border-bottom border-warning">Guests <i class="fa-solid fa-angles-right"></i></span> Visiting <span class="text-warning border-bottom border-warning">any Roxal Destination <i class="fa-solid fa-angles-right"></i></span></h3>
           </div>
-        </div>
+          </div>
 
-        <div class="image-slider mt-5">
+          <div class="image-slider mt-5">
           <div class="slider-container">
               <div class="swiper card_slider">
                 <div class="swiper-wrapper">
@@ -400,11 +410,11 @@
                 </div>
               </div>
           </div>
-        </div>
-      <!-- image slider -->
+          </div>
+          <!-- image slider -->
 
-      <!-- Experience the exceptional -->
-          <section class="experience-section text-light mx-lg-5">
+          <!-- Experience the exceptional -->
+          <section class="experience-section text-light mx-lg-5 pt-5 mb-0 ">
             <div class="experience-title d-flex flex-column align-items-center text-center mt-5">
                 <div class="mt-3 pt-5">
                   <img class="logo3" src="images/general/logo.png" alt="">
@@ -475,21 +485,12 @@
                 </div>
             </div>
           </section>
-
-          <!-- down logo -->
-          <!-- <div class="down-logo-div py-5">
-            <img class="down-logo1" src="images/general/logo.png" alt="">
-            <img class="down-logo2"  src="images/general/logo.png" alt="">
-           
-          </div> -->
-          <!-- down logo -->
           
-      <!-- Experience the exceptional -->
+          <!-- Experience the exceptional -->
          <!-- Special Guest -->
-    </section>
-
-      
-      <section class="video-section">
+        </section>
+ 
+        <section class="video-section">
         <!-- video section -->
          <div class="bg-img text-light d-flex flex-column justify-content-center align-items-center">
           <div class="text-center">
@@ -504,9 +505,9 @@
           </div>
          </div>
          <!-- video section -->
-      </section>
+        </section>
 
-      <section class="facilities pb-5">
+        <section class="facilities padding ">
         <!-- message templates -->
           <div class="p-5">
 
@@ -552,28 +553,64 @@
               </div>
             </div>
           </div>
-      </section>
+        </section>
+
+        <section class="gallary-section margin">
+          <div >
+            <div class="row gallary-1 gx-0 gy-4 d-flex align-items-center">
+              <div class="col-lg-5 col-md-8 mx-md-auto center gallary-title p-lg-5">
+                <div>
+                  <img class="logo3 mb-4" src="images/general/logo.png" alt="">
+                  <p class="text-secondary"> SPECIAL OFFERS</p>
+                 
+                  <h1 class="my-0">Explore Our <span  class="text-warning">Services</span></h1>
+                
+                  <p class="text-secondary">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meanies content used placeholder</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 gallary-img p-3">
+                <img class="w-100 p-2 shadow" src="images/general/service-1.jpg" alt="">
+              </div>
+              <div class="col-lg-4 col-md-6  gallary-img p-3">
+                <img class="w-100 p-2 shadow" src="images/general/service -2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div>
+
+            <!-- abstract img -->
+            <div class="abstract d-none d-lg-block">
+              <img class="abstract-img-1" src="images/general/Random-Dots-SMC.png" alt="">
+              <img class="abstract-img-2" src="images/general/Random-Dots-SMC.png" alt="">
+              
+            </div>
+            
+            <!-- abstract img -->
 
 
+            <div class="gallary-2 row gx-0 gy-4 d-flex align-items-center">
+              <div class="col-lg-3 col-md-6 gallary-img  p-1">
+                <img class="w-100 p-2 shadow" src="images/general/service-4.jpg" alt="">
+              </div>
+              <div class="col-lg-4 col-md-6 gallary-img p-1">
+                <img class="w-100 p-2 shadow" src="images/general/service-3.jpg" alt="">
+              </div>
+              
+              <div class="col-lg-5 d-flex justify-content-center p-3">
+                <div class="text-center gallary-title-2">
+                  <img class="logo3" src="images/general/logo.png" alt="">
+                  <h2>Find All Services</h2>
+                  <button id="button" class="rounded-0 font-monospace text-uppercase banner-button" type="submit">ROOM & SUITE</button>
+                  
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </section>
      
-           
-      
-
-
-      <!-- review -->
-      
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>

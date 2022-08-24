@@ -3,6 +3,14 @@
     body{
       font-family: 'Playfair Display', serif;
     }
+    .margin{
+      margin-top: 6rem;
+      margin-bottom: 6rem ;
+    }
+    .padding{
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
     button{
       transition: .4s ease;
       color: #e4c54a;
@@ -166,12 +174,10 @@
       color: white;
 
     }
-    .carousel-item{
-      
-      background-size: cover;
-      background-position: right;
-      background-repeat: no-repeat;
-      min-height: 100vh;
+    .car-img{
+      filter: brightness(70%);
+      width: 100%;
+      height: 100vh;
     }
     .carousel-inner > .carousel-item > .container {
       top: 50%;
@@ -180,9 +186,7 @@
       position: absolute;
       text-align: center;
     }
-    .special-offer-section{
-      margin-top: 3rem;
-    }
+   
     .offer-img{
       filter: saturate(110%);
       width: 200px;
@@ -199,7 +203,9 @@
       z-index: -1;
       animation: rotate 2s ease infinite;
     }
-
+    #special-offer{
+      margin-top: 12rem;
+    }
     /* @keyframes rotate {
      0%{
       transform: rotate(8deg);
@@ -388,28 +394,39 @@
     #facilities-card::before{
       content: ""
     }
+    .gallary-2{
+      width: 80%;
+      margin: 0 auto;
+    }
+    .gallary-title-2{
+      background-color: rgba(128, 128, 128, 0.123);
+      border-radius: 50% ;
+      padding: 3rem 4rem;
+      margin-bottom: 1rem;
+      
+    }
     .abstract img{
       width: 10%;
       position: absolute;
       transition: all 1s;
     }
-    .abstract .img-1{
-      animation: width infinite 2s ease-in-out;
-      left: 4rem;
-      margin-top: -3rem;
+    .abstract-img-1{
+      animation: width infinite 4s ease;
+      left: 0%;
+      margin-top: -5rem;
     }
-    .abstract .img-2{
-      margin-top: 2rem;
-      animation: width infinite 3s ease-in-out;
-       right: 4rem;
-        z-index: -1;
+    .abstract-img-2{
+      margin-top: 5rem;
+      animation: width infinite 4s ease;
+      left: 90%;
+      z-index: -1;
     }
     @keyframes width {
       0%{
        transform: scale(.9);
       }
       75%{
-        transform: scale(1);
+        transform: scale(.8);
       }
       100%{
         transform: scale(.9);
@@ -517,12 +534,14 @@
   .overlaping-car{
     width: 60%;
     margin: 0 auto;
+    margin-top: 5rem;
     position: relative;
     left: 0;
     top: 0;
-    
-
   
+  }
+  #special-offer{
+    margin-top: 5rem;
   }
   .overlaping-car .row{
     flex-direction: column;
@@ -540,6 +559,12 @@
   }
   .overlaping-car-border{
     border: none;
+  }
+  .gallary-1 {
+    flex-direction: column;
+  }
+  .gallary-2 {
+    flex-direction: column-reverse;
   }
 }
 
@@ -598,5 +623,11 @@
     }
     .overlaping-car-border{
       border: none;
+    }
+    .gallary-1 {
+      flex-direction: row;
+    }
+    .gallary-2 {
+      flex-direction: row-reverse;
     }
  }
