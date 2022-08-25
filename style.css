@@ -525,6 +525,8 @@
   .box{
     width: 250px;
     height: 400px;
+    margin-top: 2rem ;
+    margin-bottom: 2rem;
   }
   .inner img{
     height:auto;
