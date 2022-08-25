@@ -461,6 +461,18 @@
     .footer{
       background-color: black;
     }
+    .gallary-img:hover img{
+      transform: scale(.8);
+    }
+    .gallary-col{
+      overflow: hidden;
+     
+    }
+    .gallary-img img{
+      transition: all .6s ease-in;
+    }
+
+    
     .footer-input{
       display: flex;
       flex-direction: row;
