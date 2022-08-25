@@ -483,6 +483,36 @@
     .footer-details{
       flex-direction: row;
     }
+    .bubble{
+      background-color: rgba(128, 128, 128, 0.068);
+      border-radius: 50% ;
+      width: 350px;
+      height: 250px;
+      left: 72%  ;
+      padding: 3rem 4rem;
+      position: absolute;
+      transform: translateY(10px);
+      z-index: -10000;
+      animation: move 8s infinite ease-in-out;
+    }
+    @keyframes move {
+      0%{
+        transform: translateY(10px);
+        left: 68%;
+      }
+      50%{
+        transform: translateY(-10px);
+        left: 72%;
+        ;
+      }
+      100%{
+        transform: translateY(10px);
+        left: 68%;
+        
+      }
+      
+      
+    }
  @media screen and (max-width: 768px) {
   h1{
     font-size: 2rem;
